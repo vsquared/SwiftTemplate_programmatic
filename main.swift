@@ -39,6 +39,7 @@ let _wndH : CGFloat = 300
 let txtFld = NSTextField (frame:NSMakeRect( 60, _wndH - 60, 180, 24 ))
 window.contentView!.addSubview(txtFld)
 txtFld.stringValue = "Hello World."
+txtFld.autoresizingMask = [.maxXMargin,.minYMargin];
 
 // **** Button **** //
 let myBtn = NSButton (frame:NSMakeRect( 250, _wndH - 62, 95, 30 ))
